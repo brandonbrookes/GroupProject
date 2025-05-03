@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width", initial-scale=1.0>
+<style>
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'searchBar searchBar searchBar searchBar searchBar searchBar '
+    'graph graph graph summary summary summary'
+    'graph graph graph advice advice advice'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-container > div {
+    padding:10px;
+    font-size: 16px;
+}
+.item1 {
+    grid-area: header;
+    background-color: purple;
+    text-align: center;
+    color: #ffffff;
+}
+
+.item2 {
+    grid-area: graph;
+    background-color: blue;
+    text-align: center;
+    color: #ffffff;
+}
+.item3 {
+    grid-area: summary;
+    background-color: blue;
+    text-align: center;
+    color: #ffffff;
+}
+.item4 {
+    grid-area: advice;
+    background-color: blue;
+    text-align: center;
+    color: #ffffff;
+}
+.item5 {
+    grid-area: footer;
+    background-color: purple;
+    text-align: center;
+    color: #ffffff;
+}
+.item6 {
+    grid-area: searchBar;
+    background-color: purple;
+    text-align: center;
+    color: #ffffff;
+} 
+
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"><h1>Air Quality Data Website</h1></div>
+
+        <div class="item6">Search Bar</div>
+
+        <div class="item2">This is where the large graph shall go
+            <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </div>
+
+        <div class="item3">Summary of current weather</div>
+
+        <div class="item4">Weather based health advice</div>
+
+        <div class="item5">This is a footer</div>
+
+
+
+</body>
+</html>
